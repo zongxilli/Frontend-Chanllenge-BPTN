@@ -1,9 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './screens/Home';
 
 function App() {
-	return <div>hello</div>;
+	return (
+		<Router>
+			<Route path='/' component={Home} />
+		</Router>
+	);
 }
 
 export default App;

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
+import useMovies from '../hooks/useMovies';
 
 const Home = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+	const [movies, setMovies] = useState([]);
+	useMovies({ setMovies: setMovies });
 
-export default Home
+	console.log(movies);
+
+	return <div>{movies.page}</div>;
+};
+
+export default Home;
