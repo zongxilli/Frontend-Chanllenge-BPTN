@@ -14,7 +14,7 @@ const useMovies = ({ setMovies }) => {
 		fetchMovies();
 	}, []);
 
-	return <div></div>;
+	return;
 };
 
 export default useMovies;
