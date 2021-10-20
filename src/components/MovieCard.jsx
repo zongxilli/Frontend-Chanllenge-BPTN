@@ -9,7 +9,7 @@ const MovieCard = ({ movie, index, liked, setLiked }) => {
 	};
 
 	return (
-		<Col xs={12} md={4} lg={3}>
+		<Col xs={12}  md={6} lg={4} xl={3}>
 			<Card>
 				<Card.Img
 					variant='top'
