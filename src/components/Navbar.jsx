@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navb = () => {
 	return (
-		<Navbar bg='dark' variant='dark'>
+		<Navbar bg='dark' variant='dark' className="sticky-top">
 			<Container>
 				<Navbar.Brand>Top Movies</Navbar.Brand>
 				<Nav>
